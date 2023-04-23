@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Splash">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="60sp"
+        android:textColor="#14988A"/>
+
+    <ImageView
+        android:id="@+id/lod"
+        android:layout_width="63dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/svgviewer_output" />
+
+</LinearLayout>
