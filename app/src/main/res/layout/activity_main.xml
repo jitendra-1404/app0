@@ -7,103 +7,125 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:gravity="center"
-    android:background="@color/teal_200"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tic Tac Toe"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        android:layout_marginBottom="100dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/teal_200"
+        android:layout_height="match_parent">
 
-    <GridLayout
-        android:layout_width="290dp"
-        android:layout_height="157dp"
-        android:background="@drawable/tic_tac_toe"
-        android:columnCount="3"
-        android:padding="5dp"
-        android:rowCount="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/bt1"
-            android:layout_marginEnd="10dp"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="100dp"
+                android:text="Tic Tac Toe"
+                android:textColor="@color/black"
+                android:textSize="60sp" />
 
-        <Button
-            android:id="@+id/bt2"
-            android:layout_marginEnd="10dp"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+            <GridLayout
+                android:layout_width="290dp"
+                android:layout_height="157dp"
+                android:background="@drawable/tic_tac_toe"
+                android:columnCount="3"
+                android:padding="5dp"
+                android:rowCount="3">
 
-        <Button
-            android:id="@+id/bt3"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_marginEnd="10dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/bt4"
-            android:layout_marginEnd="10dp"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+                <Button
+                    android:id="@+id/bt2"
+                    android:layout_marginEnd="10dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/bt5"
-            android:layout_marginEnd="10dp"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+                <Button
+                    android:id="@+id/bt3"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/bt6"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+                <Button
+                    android:id="@+id/bt4"
+                    android:layout_marginEnd="10dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/bt7"
-            android:layout_marginEnd="10dp"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+                <Button
+                    android:id="@+id/bt5"
+                    android:layout_marginEnd="10dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/bt8"
-            android:layout_marginEnd="10dp"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+                <Button
+                    android:id="@+id/bt6"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/bt9"
-            android:background="#00FFFFFF"
-            android:onClick="chk"
-            android:textSize="20sp" />
+                <Button
+                    android:id="@+id/bt7"
+                    android:layout_marginEnd="10dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-    </GridLayout>
+                <Button
+                    android:id="@+id/bt8"
+                    android:layout_marginEnd="10dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/black"
-        android:textSize="35sp"/>
+                <Button
+                    android:id="@+id/bt9"
+                    android:background="#00FFFFFF"
+                    android:onClick="chk"
+                    android:textSize="20sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Game"
-        android:textSize="25sp"
-        android:onClick="reset"
-        android:layout_marginTop="40dp"/>
+            </GridLayout>
 
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:onClick="reset"
+                android:text="New Game"
+                android:textSize="25sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="172dp"
+                android:layout_height="164dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/celeb" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
 
 
